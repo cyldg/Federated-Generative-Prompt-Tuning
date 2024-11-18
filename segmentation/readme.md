@@ -20,5 +20,6 @@ python fedgpt_segment.py --model_type experiment method --dataset polyp/prostate
 ```
 ### For visualization:
 ```
-python predict_show.py --model_type experiment method --dataset polyp/prostate --data your dataset pat --save_dir path to save --prompt prompt length --decoder-weights your weight path
+python predict_show.py --model_type experiment method --dataset polyp/prostate --data your dataset path --save_dir path to save --prompt prompt length --decoder-weights your weight path
 ```
+
