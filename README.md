@@ -1,8 +1,14 @@
 # Federated-Generative-Prompt-Tuning
-This repo is the official implementation of "Fed-GPT: A Privacy-Preserving Federated Prompt Tuning Framework for Cross-Hospital Disease Diagnosis in Low-Resource Settings"
+This repo is the official implementation of "Fed-GPT: A Federated Prompt Tuning Framework for Cross-Hospital Disease Diagnosis in Low-Resource Settings"
 
 ## Abstract
-While federated medical AI has significantly improved medical data privacy preservation in cross-hospital collaborations, it still faces several challenges, including communication overhead, data scarcity, and heterogeneity. Foundation models (FMs) have emerged as a promising solution for their strong transfer potential in medical AI. Here, we propose a federated generative prompt tuning framework (Fed-GPT) to facilitate privacy-preserving collaborative disease diagnosis. Unlike the traditional federated model training, Fed-GPT enables cross-hospital prompt generator training, which realizes both communication-efficient global aggregation and local training on low-resource heterogeneous data by exploiting the power of FMs. The trained prompt generator could provide customized prompts for each patient’s medical sample, which assist FMs with personalized disease diagnosis. In addition, model inversion attacks fail to efficiently reconstruct input samples in Fed-GPT, representing a patient’s privacy guarantee. Extensive experimental results demonstrate that Fed-GPT outperforms baseline and full fine-tuning methods for cross-hospital disease diagnosis, particularly in low-resource settings.
+Federated medical AI revolutionizes the coordination of cross-hospital medical data, while communication cost, data scarcity and heterogeneity still limit its application in practical scenarios.
+The emergence of foundation models (FMs) provides an opportunity to address these challenges due to their excellent generalization ability and efficient adaptation to different downstream tasks.
+Here, we present Fed-GPT, a general and efficient federated prompt tuning framework for cross-hospital disease diagnosis in low-resource settings.
+Unlike traditional federated learning approaches, Fed-GPT collaboratively trains a prompt generator that leverages the power of FMs to achieve communication-efficient global aggregation and robust local adaptation. The trained prompt generator produces customized prompts for each patient sample, thereby enabling  personalized disease diagnosis.
+Across polyp and prostate segmentation tasks, Fed-GPT achieves 93.46% and 93.97% average dice similarity while reducing 92.8% trainable params compared to the traditional FedAvg method.
+Our method achieves faster convergence on both classification and segmentation tasks, and consistently outperforms baseline methods across various low-resource scenarios.
+Fed-GPT facilitates personalized cross-hospital disease diagnosis with minimal communication overhead, achieving precise AI-assisted diagnostics even in resource-limited clinical settings.
 
 ## Acknowledgement
 
